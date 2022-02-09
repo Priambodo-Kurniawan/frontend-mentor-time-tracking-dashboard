@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container full-vertical center-flex">
+      <section class="center-flex">
+        <div class="item">
+          <div class="profile card">
+            <div class="profile-top">
+              <div>
+                <img src="./images/image-jeremy.png" alt="profile image" />
+              </div>
+              <div>
+                <small>Report for</small>
+                <h1 class="profile-name">Jeremy Robson</h1>
+              </div>
+            </div>
+            <div class="profile-bottom">
+              <ul>
+                <li class="category" onclick="changeRange(event, 'daily')">
+                  Daily
+                </li>
+                <li
+                  class="category active"
+                  onclick="changeRange(event, 'weekly')"
+                >
+                  Weekly
+                </li>
+                <li class="category" onclick="changeRange(event, 'monthly')">
+                  Monthly
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="item-content">
+          <div id="item-container" class="center-flex"></div>
+        </div>
+      </section>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://priambodokurniawan.com">Codebeast.id</a>.
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
